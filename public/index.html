@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VELA Store</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>VELA Store</h1>
+    <div id="user">
+      <span id="user-name">Khách</span>
+      <button id="login-btn">Đăng nhập</button>
+      <button id="logout-btn" style="display:none">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input id="search" placeholder="Tìm sản phẩm..." />
+      <button id="search-btn">Tìm</button>
+    </section>
+
+    <section id="products" class="grid"></section>
+
+    <section id="cart" class="cart">
+      <h2>Giỏ hàng</h2>
+      <ul id="cart-list"></ul>
+    </section>
+  </main>
+
+  <div id="login-modal" class="modal" style="display:none">
+    <div class="modal-content">
+      <h3>Đăng nhập</h3>
+      <input id="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Mật khẩu" />
+      <button id="do-login">Đăng nhập</button>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
